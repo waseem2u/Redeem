@@ -3,25 +3,58 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0c0c0c;
+}
+.section-size {
+  @apply px-5 md:px-10 xl:px-14;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #0c0c0c;
   }
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Inter, sans-serif, Zen Dots;
+}
+.border-gradiant {
+  border: 1px solid;
+
+  background: linear-gradient(#121414, #121414) padding-box,
+    linear-gradient(180deg,#55eaf1 , #313f8b) border-box;
+  border: 1px solid transparent;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.rollable-link {
+  perspective: 600px;
 }
+
+.rollable-text {
+  transform-origin: 50% 0%;
+  transform-style: preserve-3d;
+}
+
+.rollable-link:hover .rollable-text {
+  transform: translate3d(0, 0, -30px) rotateX(90deg);
+  background-color: transparent;
+}
+
+.rollable-link:hover .rollable-text::after {
+  content: attr(data-title);
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 12px 24px;
+  color: black;
+  background-color: white;
+  transform-origin: 50% 0%;
+  transform: translate3d(0, 105%, 0) rotateX(-90deg);
+  transition: transform 0.7s ease-in-out;
+}
+
+
+
+
