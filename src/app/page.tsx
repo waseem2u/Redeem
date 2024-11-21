@@ -9,13 +9,14 @@ import Successful from "./components/Successful";
 export default function Home() {
   return (
     <div>
-       {/* <Navbar />
+       <Navbar />
       <Header />
       <Journey />
-      <Reward /> */}
+      <Reward />
+
       <Successful />
-      {/* <DiscoverEvents />
-      <Footer />   */}
+      <DiscoverEvents />
+      <Footer />  
     </div>
   );
 }
