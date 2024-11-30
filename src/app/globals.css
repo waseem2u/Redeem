@@ -55,6 +55,34 @@ body {
   transition: transform 0.7s ease-in-out;
 }
 
+.linear-gradiant{
+  border-radius: 20px;
+  border-top: 1px solid #bf6dee;
+  border-bottom: 1px solid #bf6dee;
+  background: rgba(191, 109, 238, 0.1);
+  backdrop-filter: blur(6px);
+}
+.table-separator{
+  border-collapse: separate;
+  border-spacing: 0 1rem;
+}
+.last-table-col{
+  text-align: -webkit-right;
+}
 
 
+
+.text-gradient {
+  background: radial-gradient(159.46% 3427.22% at 91.99% 125.57%, rgba(209, 43, 255, 0.5) 0%, #BEB9C7 19.48%, #FFFFFF 69.68%, rgba(255, 255, 255, 0.1) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.button-gradiant{
+  background: linear-gradient(90deg, rgba(227, 136, 211, 0.25) 0%, rgba(144, 130, 213, 0.25) 52%, rgba(255, 255, 255, 0.25) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 
