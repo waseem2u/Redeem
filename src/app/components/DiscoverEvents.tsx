@@ -8,19 +8,17 @@ import image3 from "../../../public/event/event3.svg";
 
 const DiscoverEvents = () => {
   return (
-    <div className=" mt-[150px] bg-black-indian">
-      <h3
-        className={`${zenDot.className} section-size font-normal text-[32px] text-white text-center  py-16`}
-      >
-        Discover More Events & NFTs
+    <div className=" mt-[150px] ">
+      <h3 className=" font-bold text-4xl text-black text-center  py-16">
+        Other Products
       </h3>
-      <div className="w-full flex justify-center items-center gap-1 flex-wrap">
+      <div className="w-full flex justify-center  lg:justify-between items-center flex-wrap">
         {events.map((x, index) => (
           <Image
             key={index}
             src={x.img1}
             alt="events"
-            className="w-[339px] h-[264px]"
+            className="w-[345px] h-[264px]"
           />
         ))}
       </div>

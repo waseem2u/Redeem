@@ -3,15 +3,19 @@
 @tailwind utilities;
 
 :root {
-  --background: #0c0c0c;
+  --background: #FFFFFF;
 }
 .section-size {
   @apply px-5 md:px-10 xl:px-14;
 }
+.section-bit {
+  @apply px-8 md:px-10 xl:px-14;
+  
+}
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0c0c0c;
+    --background: #FFFFFF ;
   }
 }
 
@@ -53,6 +57,7 @@ body {
   transform-origin: 50% 0%;
   transform: translate3d(0, 105%, 0) rotateX(-90deg);
   transition: transform 0.7s ease-in-out;
+  text-align: center;
 }
 
 .linear-gradiant{

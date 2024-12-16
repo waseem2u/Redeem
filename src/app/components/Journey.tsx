@@ -24,23 +24,7 @@ const Journey = () => {
       setCounter300((prevCounter) => prevCounter - 1); // Decrement counter for 300
       setCounter500((prevCounter) => prevCounter + 1); // Increment counter for 500
     }
-    // const [value, setValue] = useState(300); // Initial value is 300
-    // const [minVal, setMinVal] = useState(500); // last value is 500
-
-    // const increment = (increment) => {
-    //   setValue((prevValue) => {
-    //     const newValue = prevValue + increment;
-
-    //     return newValue > 500 ? 500 : newValue; // Limit the value to a maximum of 500
-    //   });
-    // };
-
-    // const decrement = (decrement) => {
-    //   setMinVal((preValue) => {
-    //     const newValue = preValue - decrement;
-
-    //     return newValue < 300 ? 300 : newValue; // Limit the value to a minimum of 300
-    //   });
+    
   };
   return (
     <div className="section-size bg-black-indian">

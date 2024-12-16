@@ -20,15 +20,13 @@ const Reward = () => {
   };
 
   return (
-    <div className=" section-size flex justify-center items-center flex-col md:flex-row gap-[218px] mt-[75px] md:mt-[150px]">
-      <div className="flex justify-start items-start flex-col gap-8 w-full max-w-[550px]">
-        <h3
-          className={`${zenDot.className}  text-2xl lg:text-4xl font-normal text-white text-center my-12`}
-        >
-          Your Exclusive Lumina Festival Rewards
+    <div className=" section-bit flex justify-center items-center flex-col lg:flex-row gap-36 lg:gap-[218px]">
+      <div className="flex justify-start items-start flex-col gap-8 w-full max-w-[550px] ">
+        <h3 className="font-bold font-space-grotesk text-black text-2xl lg:text-[40px] text-center uppercase">
+          Your Exclusive BitBasel event Rewards
         </h3>
         <div>
-          <Image src={reward} alt="reward" className="w-[541px] " />
+          <Image src={reward} alt="reward" className="w-[541px] h-[457px] " />
         </div>
         <CustomButton
           className="w-full"
@@ -36,39 +34,49 @@ const Reward = () => {
         />
       </div>
 
-      <div className="w-full max-w-[420px] flex justify-center items-center gap-6 flex-col">
+      <div className="w-full max-w-[420px] flex justify-start items-start gap-[80px] flex-col h-[650px] ">
         <div>
-          <p className="text-xl font-normal text-nova-night pb-[130px]">
-            By minting the Lumina Festival NFT and purchasing exclusive festival
-            merchandise, you unlock these special rewards:
+          <p className="text-black font-space-grotesk text-xl font-medium ">
+            By minting the BitBasel NFT and purchasing exclusive festival
+            merchandise, you unlock special rewards:
           </p>
         </div>
-        {VIP_EVENTS.map((x, index) => (
-          <div className="w-full max-w-[420px] border-b border-baby-blue">
-            <button
-              key={index}
-              onClick={() => handleOnClick(index)}
-              className="w-full cursor-pointer border-none pb-4"
-            >
-              <div className="flex justify-start items-center gap-2 w-full max-w-[420px]">
-                <div className="">
-                  <Image
-                    src={x.img}
-                    alt="vector"
-                    className="w-[17px] h-[13px] text-baby-blue"
-                  />
+        <div>
+          {VIP_EVENTS.map((x, index) => (
+            <div className="w-full max-w-[420px] border-b border-black  ">
+              <button
+                key={index}
+                onClick={() => handleOnClick(index)}
+                className="w-full cursor-pointer border-none pb-2"
+              >
+                <div className="flex justify-start items-center gap-2 w-full max-w-[420px]">
+                  <div className="">
+                    <Image
+                      src={x.img}
+                      alt="vector"
+                      className="w-[17px] h-[13px] "
+                    />
+                  </div>
+                  <div className="w-full flex justify-between items-center pt-3">
+                    <h3 className="text-black pb-1 font-space-grotesk font-medium text-lg  ">
+                      {x.name}
+                    </h3>
+                    <Image
+                      src={icon}
+                      alt="icon"
+                      className="w-[17px] h-[11px] "
+                    />
+                  </div>
                 </div>
-                <div className="w-full flex justify-between items-center">
-                  <h3 className="text-white">{x.name}</h3>
-                  <Image src={icon} alt="icon" className="w-[17px] h-[11px]" />
-                </div>
-              </div>
-            </button>
-            {show === index ? (
-              <h1 className="text-nova-night pb-4">{x.detail}</h1>
-            ) : null}
-          </div>
-        ))}
+              </button>
+              {show === index ? (
+                <h1 className="text-black pb-1 font-space-grotesk font-medium text-lg">
+                  {x.detail}
+                </h1>
+              ) : null}
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
@@ -109,6 +117,18 @@ const VIP_EVENTS = [
   },
   {
     id: 6,
+    img: v6,
+    name: "Community and Networking Opportunities",
+    detail: "Community and Networking Opportunities",
+  },
+  {
+    id: 7,
+    img: v6,
+    name: "Community and Networking Opportunities",
+    detail: "Community and Networking Opportunities",
+  },
+  {
+    id: 8,
     img: v6,
     name: "Community and Networking Opportunities",
     detail: "Community and Networking Opportunities",

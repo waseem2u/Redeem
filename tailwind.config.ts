@@ -11,9 +11,11 @@ export default {
         "header-bg": "url('/images/bg-header.svg')",
         "bg-simple": "url('/images/card-simple.svg')",
         "card-bg": "url('/images/bg-card.svg')",
+        "headerBit-bg": "url('/bit-basel-logo/bg-bitsel.png')",
       },
       boxShadow: {},
       colors: {
+        "border-smoke-grey": "#e7e7e7",
         "black-indian": " #121414",
         "lite-smoke": "#E0E0E01A",
         "smoke-black": "#122121",
@@ -28,11 +30,14 @@ export default {
         purpal: "rgb(225 202 255)",
         "border-color-blue": "#562C7D",
         "lite-grey": "#BF6DEE1A",
-        // background: #BF6DEE1A;
+        "grey": "#878788",
+        "silver-grey":" #E4E1D5",
+        "purpal-grey" :"#EBA4B3"
 
+        // background: #BF6DEE1A;
       },
       fontFamily: {
-        "space-grotesk": ["Space Grotesk", "sans-serif"],
+        "space-grotesk": [" Manrope", "Space Grotesk", "sans-serif"],
       },
     },
   },
