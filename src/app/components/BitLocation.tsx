@@ -20,7 +20,7 @@ const BitLocation = () => {
             />
           </div>
         </div>
-        <div className=" flex justify-between items-center gap-4">
+        <div className=" flex justify-between items-center gap-8">
           <div className=" w-full max-w-[22%] h-[144px] place-content-start">
             <div className="flex justify-start items-center gap-2">
               <img

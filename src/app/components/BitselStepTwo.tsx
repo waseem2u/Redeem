@@ -37,7 +37,7 @@ const BitselStepTwo = () => {
         </div>
       </div>
       <div className="w-full flex justify-center items-center flex-col gap-[24px] py-[35px]">
-        <h3 className="font-bold font-space-grotesk text-black text-[20px] md:text-2xl lg:text-[40px] text-center">
+        <h3 className="font-bold font-space-grotesk text-black text-base md:text-2xl lg:text-[40px] text-center">
           PURCHASE MERCHA AND UNLOCK REWARDS
         </h3>
         <p className="w-full max-w-[601px] text-center  text-black font-normal font-space-grotesk ">
@@ -106,7 +106,7 @@ const BitselStepTwo = () => {
           </div>
           <div className=" md:w-[423px] h-[544px]">
             <div className=" flex justify-start items-start flex-col gap-4">
-              <h3 className="uppercase font-bold font-space-grotesk text-[20px] md:text-2xl lg:text-[36px] text-black">
+              <h3 className="uppercase font-bold font-space-grotesk text-base md:text-2xl lg:text-[36px] text-black">
                 {filteredProduct.name}
               </h3>
               <div
@@ -178,7 +178,7 @@ const BitselStepTwo = () => {
                 ))}
               </div>
               <div className="mt-10">
-                <CustomButton className="font-space-grotesk font-medium text-black text-base w-full">
+                <CustomButton className="font-space-grotesk font-medium text-black text-[10px] md:text-base w-full">
                   Mint NFT to Unlock
                 </CustomButton>
               </div>

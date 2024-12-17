@@ -20,7 +20,7 @@ const BitselCustomCard = () => {
                   <p className="font-normal font-space-grotesk text-xl text-black">{x.name}</p>
                 </div>
               </div>
-              <p className="text-xl font-semibold font-space-grotesk text-black">{x.step}</p>
+              <p className="text-base md:text-xl font-semibold font-space-grotesk text-black">{x.step}</p>
             </div>
           ))}
         </div>

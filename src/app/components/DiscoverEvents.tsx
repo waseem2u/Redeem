@@ -9,10 +9,10 @@ import image3 from "../../../public/event/event3.svg";
 const DiscoverEvents = () => {
   return (
     <div className=" mt-[150px] ">
-      <h3 className=" font-bold text-4xl text-black text-center  py-16">
+      <h3 className=" font-bold text-base md:text-4xl text-black text-center  py-16">
         Other Products
       </h3>
-      <div className="w-full flex justify-center  lg:justify-between items-center flex-wrap">
+      <div className="w-full flex justify-center gap-5 md:gap-0  lg:justify-between items-center flex-wrap">
         {events.map((x, index) => (
           <Image
             key={index}

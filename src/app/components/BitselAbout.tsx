@@ -27,7 +27,7 @@ const BitselAbout = () => {
                 your exclusive NFT.
               </p>
               <div>
-                <CustomButton className="flex-start">
+                <CustomButton className="flex-start text-[10px] md:text-xl">
                   Mint Your Exclusive NFT Now!
                 </CustomButton>
               </div>

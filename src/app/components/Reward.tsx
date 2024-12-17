@@ -21,15 +21,15 @@ const Reward = () => {
 
   return (
     <div className=" section-bit flex justify-center items-center flex-col lg:flex-row gap-36 lg:gap-[218px]">
-      <div className="flex justify-start items-start flex-col gap-8 w-full max-w-[550px] ">
-        <h3 className="font-bold font-space-grotesk text-black text-2xl lg:text-[40px] text-center uppercase">
+      <div className="flex justify-start items-start flex-col gap-8 w-full  ">
+        <h3 className="font-bold font-space-grotesk text-black text-base lg:text-4xl text-start uppercase">
           Your Exclusive BitBasel event Rewards
         </h3>
         <div>
           <Image src={reward} alt="reward" className="w-[541px] h-[457px] " />
         </div>
         <CustomButton
-          className="w-full"
+          className="w-full tex-[10px] md:text-xl"
           children="MINT NFT TO AVAIL THESE REWARDS"
         />
       </div>
@@ -57,8 +57,8 @@ const Reward = () => {
                       className="w-[17px] h-[13px] "
                     />
                   </div>
-                  <div className="w-full flex justify-between items-center pt-3">
-                    <h3 className="text-black pb-1 font-space-grotesk font-medium text-lg  ">
+                  <div className="w-full flex justify-start items-start pt-3">
+                    <h3 className="text-black pb-1 font-space-grotesk font-medium text-lg text-start">
                       {x.name}
                     </h3>
                     <Image
