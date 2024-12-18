@@ -3,7 +3,6 @@
 import React, { useState } from "react";
 import CustomCard from "./CustomCard";
 import CustomCard1 from "./CustomCard1";
-import { zenDot } from "../layout";
 
 const Journey = () => {
   const [position, setPosition] = useState(300); // Initial position
@@ -30,7 +29,7 @@ const Journey = () => {
     <div className="section-size bg-black-indian">
       <div className="flex justify-center items-center w-full">
         <h3
-          className={`${zenDot.className} text-2xl text-center lg:text-5xl font-normal items-center text-white mt-[50px]  md:w-auto leading-[36px]`}
+          className={`text-2xl text-center lg:text-5xl font-normal items-center text-white mt-[50px]  md:w-auto leading-[36px]`}
         >
           Your VIP Journey Begins Here
         </h3>
@@ -41,7 +40,7 @@ const Journey = () => {
           <div className=" border border-gradiant">
             <div className="flex justify-center items-center w-full">
               <h3
-                className={`${zenDot.className} text-2xl text-center lg:text-5xl font-normal items-center  text-white mt-[50px]`}
+                className={`text-2xl text-center lg:text-5xl font-normal items-center  text-white mt-[50px]`}
               >
                 Mint Your Exclusive Lumina NFT
               </h3>

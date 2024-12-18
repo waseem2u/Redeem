@@ -1,7 +1,6 @@
 "use client";
 
 import React, { useState } from "react";
-import BitselRewardCard from "./BitselRewardCard";
 import CustomButton from "./CustomButton";
 import { PRODUCTS } from "@/utils/static";
 import Image from "next/image";
@@ -11,21 +10,14 @@ import classNames from "classnames";
 const BitselStepTwo = () => {
   const [selectedColor, setSelectedColor] = useState("white");
   const [selectedSize, setSelectedSize] = useState("Large");
-  const [data, setData] = useState(BITSEL_CARD);
   const [filteredProduct, setFilteredProduct] = useState(PRODUCTS[0]);
 
   const handleColorSelection = (color: string) => {
-    // Set the selected color when clicked
     setSelectedColor(color === selectedColor ? "!show image" : color); // Toggle color off if already selected
   };
   const handleSizeSelection = (size: string) => {
     setSelectedSize(size);
   };
-  // const [selectColor, setSelectColor] = useState("");
-
-  // const handleColor = (color: string) => {
-  //   setSelectColor(color);
-  // };
 
   return (
     <div className="section-bit">
@@ -61,7 +53,7 @@ const BitselStepTwo = () => {
               onClick={() => {
                 setFilteredProduct(product);
               }}
-              className={classNames("",{
+              className={classNames({
                 "border-[1.5px] border-nova-night shadow-md":
                   product.id === filteredProduct.id,
               })}
@@ -86,8 +78,11 @@ const BitselStepTwo = () => {
         <div className="flex justify-center items-center gap-12 lg:flex-row flex-col">
           <div className="flex justify-center items-center flex-col lg:flex-col-reverse  xl:flex-row gap-3 xl:align-self ">
             <div className="flex justify-center items-center flex-row lg:flex-row xl:flex-col gap-3">
-              {filteredProduct.images.map((image) => (
-                <div className=" w-24 h-28 md:w-[150px] md:h-[160px] ">
+              {filteredProduct.images.map((image, index) => (
+                <div
+                  className=" w-24 h-28 md:w-[150px] md:h-[160px]"
+                  key={index}
+                >
                   <Image
                     src={image}
                     alt={filteredProduct.description}
@@ -99,8 +94,13 @@ const BitselStepTwo = () => {
               ))}
             </div>
             <div className="w-[250px] h-[350px]  md:w-[443px] md:h-[528px] xl:h-[506px] overflow-hidden">
-              {filteredProduct.images.map((x) => (
-                <img src={x} alt="bit" className="w-full h-full object-cover" />
+              {filteredProduct.images.map((x, index) => (
+                <img
+                  key={index}
+                  src={x}
+                  alt="bit"
+                  className="w-full h-full object-cover"
+                />
               ))}
             </div>
           </div>
@@ -114,16 +114,14 @@ const BitselStepTwo = () => {
               "
               >
                 <p className="text-xl font-normal text-black font-space-grotesk line-through">
-                  $260
+                  {filteredProduct.price}
                 </p>
                 <span className="text-xl font-normal text-black font-space-grotes">
                   Free
                 </span>
               </div>
               <p className="font-normal font-space-grotesk text-base text-black">
-                A sleek bomber jacket inspired by Gotham's Dark Knight. Made
-                from premium, breathable fabric, it offers comfort and style for
-                everyday wear.
+                {filteredProduct.description}
               </p>
             </div>
             <div className="mt-16">
@@ -192,40 +190,40 @@ const BitselStepTwo = () => {
 
 export default BitselStepTwo;
 
-const BITSEL_CARD = [
-  {
-    id: 1,
-    img: "/bitsel-reward/bitsel-card2.svg",
-  },
-  {
-    id: 2,
-    img: "/bitsel-reward/bitsel-card3.svg",
-  },
-  {
-    id: 3,
-    img: "/bitsel-reward/bitsel-card2.svg",
-  },
-];
+// const BITSEL_CARD = [
+//   {
+//     id: 1,
+//     img: "/bitsel-reward/bitsel-card2.svg",
+//   },
+//   {
+//     id: 2,
+//     img: "/bitsel-reward/bitsel-card3.svg",
+//   },
+//   {
+//     id: 3,
+//     img: "/bitsel-reward/bitsel-card2.svg",
+//   },
+// ];
 
-const BIT_VECTOR = [
-  {
-    id: 1,
-    img: "/bit-vector/bitVector.svg",
-    color: "silver-grey",
-  },
-  {
-    id: 2,
-    img: "/bit-vector/bitVector.svg",
-    color: "white",
-  },
-  {
-    id: 3,
-    img: "/bit-vector/bitVector.svg",
-    color: "purpal-grey",
-  },
-  {
-    id: 4,
-    img: "/bit-vector/bitVector.svg",
-    color: "lite-smoke",
-  },
-];
+// const BIT_VECTOR = [
+//   {
+//     id: 1,
+//     img: "/bit-vector/bitVector.svg",
+//     color: "silver-grey",
+//   },
+//   {
+//     id: 2,
+//     img: "/bit-vector/bitVector.svg",
+//     color: "white",
+//   },
+//   {
+//     id: 3,
+//     img: "/bit-vector/bitVector.svg",
+//     color: "purpal-grey",
+//   },
+//   {
+//     id: 4,
+//     img: "/bit-vector/bitVector.svg",
+//     color: "lite-smoke",
+//   },
+// ];

@@ -15,32 +15,32 @@ const HeaderBit = () => {
 
 export default HeaderBit;
 
-const BIT_HEADER = [
-  {
-    id: 1,
-    name: "FINE",
-  },
-  {
-    id: 2,
-    name: "digital",
-  },
-  {
-    id: 1,
-    name: "AUGMENTED",
-  },
-];
+// const BIT_HEADER = [
+//   {
+//     id: 1,
+//     name: "FINE",
+//   },
+//   {
+//     id: 2,
+//     name: "digital",
+//   },
+//   {
+//     id: 1,
+//     name: "AUGMENTED",
+//   },
+// ];
 
-const BIT_HEAD = [
-  {
-    id: 1,
-    name: "artificial",
-  },
-  {
-    id: 2,
-    name: "MINTED",
-  },
-  {
-    id: 3,
-    name: "INSPACE",
-  },
-];
+// const BIT_HEAD = [
+//   {
+//     id: 1,
+//     name: "artificial",
+//   },
+//   {
+//     id: 2,
+//     name: "MINTED",
+//   },
+//   {
+//     id: 3,
+//     name: "INSPACE",
+//   },
+// ];

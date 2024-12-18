@@ -1,12 +1,13 @@
 import React from "react";
 import CustomButton from "./CustomButton";
-import { zenDot } from "../layout";
 
 const Header = () => {
   return (
     <div className="section-size bg-header-bg xl:bg-header-bg md:min-h-[827px] bg-contain min-[290px]:bg-cover 2xl:bg-center bg-no-repea">
       <div className="flex justify-center items-center w-full">
-        <h3 className={`${zenDot.className}   text-[32px] text-center  lg:text-5xl font-normal items-center  text-white mt-[74px] md:w-auto `}>
+        <h3
+          className={`text-[32px] text-center  lg:text-5xl font-normal items-center  text-white mt-[74px] md:w-auto `}
+        >
           Lumina Nights Festival 2024
         </h3>
       </div>
@@ -25,10 +26,9 @@ const Header = () => {
       </div>
 
       <div className="flex justify-center items-center mt-[26px]">
-        <CustomButton
-          children="Mint Your Exclusive Festival NFT Now!"
-          className="text-sm"
-        />
+        <CustomButton className="text-sm">
+          Mint Your Exclusive Festival NFT Now!
+        </CustomButton>
       </div>
       <div className="flex justify-end items-end ">
         <img

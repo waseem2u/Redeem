@@ -36,10 +36,13 @@ const CustomCard1 = () => {
               </div>
             </div>
             <div className=" flex justify-center  w-full pt-4">
-              <CustomButton
+              <CustomButton className="w-[280px] uppercase">
+                mint nft
+              </CustomButton>
+              {/* <CustomButton
                 children="mint nft"
                 className="w-[280px] uppercase"
-              />
+              /> */}
             </div>
           </div>
         ))}

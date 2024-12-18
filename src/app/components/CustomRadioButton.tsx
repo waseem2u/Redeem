@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const ColorSelector = () => {
   const [selectColor, setSelectColor] = useState("");
 
-  const handleColorSelection = (color) => {
+  const handleColorSelection = (color:string) => {
     setSelectColor(color);
   };
 

@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState } from "react";
-import Crousel from "./Crousel";
+// import Crousel from "./Crousel";
 import CustomButton from "./CustomButton";
 
 const Successful = () => {
@@ -24,7 +24,7 @@ const Successful = () => {
   return (
     <div className="w-full mt-[100px] px-4">
       <div className="flex justify-center items-center w-full">
-        <Crousel massage={selectedSize} colorSize={selectColor} />
+        {/* <Crousel massage={selectedSize} colorSize={selectColor} /> */}
 
         <div className="w-full max-w-[508px] flex flex-col justify-start items-start gap-5">
           <h3 className="font-bold text-4xl text-white">
@@ -88,11 +88,9 @@ const Successful = () => {
             </div>
           </div>
 
-          <CustomButton
-            onClick={buyNow}
-            children="Buy Now"
-            className="w-full"
-          />
+          <CustomButton onClick={buyNow} className="w-full">
+            Buy Now
+          </CustomButton>
         </div>
       </div>
     </div>

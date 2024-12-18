@@ -13,7 +13,10 @@ const CustomForm = () => {
   ) => {
     e.preventDefault();
     console.log({ name, email, phoneNumber, massage });
-    setName(""), setEmail(""), setPhoneNumber(""), setMassage("");
+    setName("");
+    setEmail("");
+    setPhoneNumber("");
+    setMassage("");
   };
 
   return (

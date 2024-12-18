@@ -5,7 +5,7 @@ const CustomCard = () => {
     <div className="flex justify-center">
       <div className="section-size w-full max-w-[1240px] mt-[60px] flex items-center gap-7 md:gap-20 justify-center flex-wrap">
         {JOURNEY.map((x, id) => (
-          <div className=" flex justify-center items-center flex-col gap-[16px]">
+          <div className=" flex justify-center items-center flex-col gap-[16px]" key={id}>
             <div
               key={id}
               className=" border-gradiant bg-bg-simple bg-no-repeat bg-contain bg-center w-[283px] h-[187px] flex justify-center items-center flex-col gap-5"

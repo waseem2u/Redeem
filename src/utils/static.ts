@@ -15,9 +15,9 @@ export const PRODUCTS = [
   },
   {
     id: 2,
-    name: "",
-    price: "",
-    description: "",
+    name: "CREW NECK T-SHIRT BITBASEL",
+    price: "$250",
+    description: "A sleek bomber jacket inspired by Gotham's Dark Knight. Made from premium,",
     colors: ["", ""],
     images: [
       "/bitsel-reward/bitsel-card1.svg",

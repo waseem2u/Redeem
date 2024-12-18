@@ -1,5 +1,4 @@
 import React from "react";
-import { zenDot } from "../layout";
 import Image from "next/image";
 import image1 from "../../../public/event/event1.svg";
 import image2 from "../../../public/event/event2.svg";

@@ -1,18 +1,14 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
 import "./globals.css";
-import { Inter, Zen_Dots } from "next/font/google";
+import { Inter } from "next/font/google";
 
 const inter = Inter({
   subsets: ["latin"],
-  display: "swap",
 });
 
-export const zenDot = Zen_Dots({
-  weight: ["400"],
- subsets:['latin'],
-  display: "swap",
-});
+// export const zenDot = Zen_Dots({
+//   weight: "400",
+//   subsets: ["latin"],
+// });
 
 // export const metadata: Metadata = {
 //   title: "Create Next App",

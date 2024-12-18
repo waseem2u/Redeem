@@ -6,7 +6,10 @@ const BitselCustomCard = () => {
       <div className="flex justify-center">
         <div className="w-full max-w-[1240px]  flex items-center gap-7 md:gap-20 justify-center flex-wrap">
           {JOURNEY.map((x, id) => (
-            <div className=" flex justify-center items-center flex-col gap-[16px]">
+            <div
+              className=" flex justify-center items-center flex-col gap-[16px]"
+              key={id}
+            >
               <div
                 key={id}
                 className=" border border-border-smoke-grey w-[283px] h-[187px] flex justify-center items-center flex-col gap-5"
@@ -17,10 +20,14 @@ const BitselCustomCard = () => {
                     alt="mint"
                     className="w-[62px] h-[69px] object-contain"
                   />
-                  <p className="font-normal font-space-grotesk text-xl text-black">{x.name}</p>
+                  <p className="font-normal font-space-grotesk text-xl text-black">
+                    {x.name}
+                  </p>
                 </div>
               </div>
-              <p className="text-base md:text-xl font-semibold font-space-grotesk text-black">{x.step}</p>
+              <p className="text-base md:text-xl font-semibold font-space-grotesk text-black">
+                {x.step}
+              </p>
             </div>
           ))}
         </div>

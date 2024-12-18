@@ -22,7 +22,7 @@ const BitselAbout = () => {
             <div className=" flex justify-start items-start gap-[35px]   flex-col">
               <p className="w-full max-w-[988px] text-black font-space-grotesk font-medium text-base md:text-[22px] md:leading-[40px] uppercase">
                 Experience the intersection of digital art and blockchain at
-                BitBasel's NFT Art Festival. Discover groundbreaking art, meet
+                BitBasel&apos;s NFT Art Festival. Discover groundbreaking art, meet
                 visionary creators, and become part of the movement by minting
                 your exclusive NFT.
               </p>

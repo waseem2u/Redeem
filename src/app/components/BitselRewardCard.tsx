@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import { PRODUCTS } from "@/utils/static";
 
 type BitselProps = {
   massage: string; // External prop to determine the currently selected image
@@ -35,25 +34,7 @@ const BitselRewardCard = ({ massage }: BitselProps) => {
 
       {/* Render all reward cards */}
       <div className="flex justify-center items-center flex-wrap gap-12">
-        {PRODUCTS.map((reward) => (
-          <div
-            key={reward.id}
-            onClick={() => setSelectedRewards([reward])} // Set the clicked reward as selected
-            className={`w-[250px] h-[350px] border cursor-pointer ${
-              selectedRewards.find((r) => r.id === reward.id)
-                ? "border-blue-500"
-                : "border-gray-300"
-            }`}
-          >
-            {reward.images.map((item) => (
-              <img
-                src={item}
-                alt={`Reward ${reward.id}`}
-                className="w-full h-full object-cover"
-              />
-            ))}
-          </div>
-        ))}
+        
       </div>
     </div>
   );

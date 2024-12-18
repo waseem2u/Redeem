@@ -1,6 +1,5 @@
 "use client";
 import React, { useState } from "react";
-import { zenDot } from "../layout";
 import Image from "next/image";
 import reward from "../../../public/reward/reward.svg";
 import CustomButton from "./CustomButton";
@@ -13,37 +12,39 @@ import v6 from "../../../public/vector/v6.svg";
 import icon from "../../../public/vector/Icon.svg";
 
 const Reward = () => {
-  const [show, setShow] = useState(null);
+  const [show, setShow] = useState<number | null>(null);
 
-  const handleOnClick = (index: any) => {
+  const handleOnClick = (index: number | null) => {
     setShow(show === index ? null : index);
   };
 
   return (
     <div className=" section-bit flex justify-center items-center flex-col lg:flex-row gap-36 lg:gap-[218px]">
-      <div className="flex justify-start items-start flex-col gap-8 w-full  ">
+      <div className="flex justify-start items-start flex-col gap-8 w-full">
         <h3 className="font-bold font-space-grotesk text-black text-base lg:text-4xl text-start uppercase">
           Your Exclusive BitBasel event Rewards
         </h3>
         <div>
           <Image src={reward} alt="reward" className="w-[541px] h-[457px] " />
         </div>
-        <CustomButton
-          className="w-full tex-[10px] md:text-xl"
-          children="MINT NFT TO AVAIL THESE REWARDS"
-        />
+        <CustomButton className="w-full tex-[10px] md:text-xl">
+          MINT NFT TO AVAIL THESE REWARDS
+        </CustomButton>
       </div>
 
-      <div className="w-full max-w-[420px] flex justify-start items-start gap-[80px] flex-col h-[650px] ">
+      <div className="w-full max-w-[420px] flex justify-start items-start  flex-col">
         <div>
           <p className="text-black font-space-grotesk text-xl font-medium ">
             By minting the BitBasel NFT and purchasing exclusive festival
             merchandise, you unlock special rewards:
           </p>
         </div>
-        <div>
+        <div className="w-full">
           {VIP_EVENTS.map((x, index) => (
-            <div className="w-full max-w-[420px] border-b border-black  ">
+            <div
+              key={index}
+              className="w-full max-w-[420px] border-b border-black  "
+            >
               <button
                 key={index}
                 onClick={() => handleOnClick(index)}
@@ -54,17 +55,17 @@ const Reward = () => {
                     <Image
                       src={x.img}
                       alt="vector"
-                      className="w-[17px] h-[13px] "
+                      className="w-[17px] h-[13px] bg-black"
                     />
                   </div>
-                  <div className="w-full flex justify-start items-start pt-3">
-                    <h3 className="text-black pb-1 font-space-grotesk font-medium text-lg text-start">
+                  <div className="w-full flex justify-between items-center pt-3">
+                    <h3 className="text-black pb-1 font-space-grotesk font-medium text-xs lg:text-base text-start">
                       {x.name}
                     </h3>
                     <Image
                       src={icon}
                       alt="icon"
-                      className="w-[17px] h-[11px] "
+                      className="w-[17px] h-[11px] bg-black"
                     />
                   </div>
                 </div>
