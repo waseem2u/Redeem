@@ -21,11 +21,15 @@ const Reward = () => {
   return (
     <div className=" section-bit flex justify-center items-center flex-col lg:flex-row gap-36 lg:gap-[218px]">
       <div className="flex justify-start items-start flex-col gap-8 w-full">
-        <h3 className="font-bold font-space-grotesk text-black text-base lg:text-4xl text-start uppercase">
+        <h3 className="font-space-grotesk font-bold text-base md:text-xl lg:text-3xl xl:text-4xl text-black uppercase">
           Your Exclusive BitBasel event Rewards
         </h3>
         <div>
-          <Image src={reward} alt="reward" className="w-[541px] h-[457px] " />
+          <Image
+            src={reward}
+            alt="reward"
+            className="w-[541px] md:h-[457px] "
+          />
         </div>
         <CustomButton className="w-full tex-[10px] md:text-xl">
           MINT NFT TO AVAIL THESE REWARDS
@@ -34,7 +38,7 @@ const Reward = () => {
 
       <div className="w-full max-w-[420px] flex justify-start items-start  flex-col">
         <div>
-          <p className="text-black font-space-grotesk text-xl font-medium ">
+          <p className="text-black font-space-grotesk text-base font-medium pb-[3rem] md:pb-0">
             By minting the BitBasel NFT and purchasing exclusive festival
             merchandise, you unlock special rewards:
           </p>
@@ -50,12 +54,12 @@ const Reward = () => {
                 onClick={() => handleOnClick(index)}
                 className="w-full cursor-pointer border-none pb-2"
               >
-                <div className="flex justify-start items-center gap-2 w-full max-w-[420px]">
+                <div className="flex justify-start items-baseline gap-2 w-full max-w-[420px]">
                   <div className="">
                     <Image
                       src={x.img}
                       alt="vector"
-                      className="w-[17px] h-[13px] bg-black"
+                      className="w-[17px] h-[13px] "
                     />
                   </div>
                   <div className="w-full flex justify-between items-center pt-3">
@@ -65,13 +69,13 @@ const Reward = () => {
                     <Image
                       src={icon}
                       alt="icon"
-                      className="w-[17px] h-[11px] bg-black"
+                      className="w-[17px] h-[11px] "
                     />
                   </div>
                 </div>
               </button>
               {show === index ? (
-                <h1 className="text-black pb-1 font-space-grotesk font-medium text-lg">
+                <h1 className="text-black pb-1 font-space-grotesk font-normal text-base">
                   {x.detail}
                 </h1>
               ) : null}

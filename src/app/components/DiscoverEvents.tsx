@@ -7,20 +7,21 @@ import image3 from "../../../public/event/event3.svg";
 
 const DiscoverEvents = () => {
   return (
-    <div className=" mt-[150px] ">
-      <h3 className=" font-bold text-base md:text-4xl text-black text-center  py-16">
-        Other Products
-      </h3>
-      <div className="w-full flex justify-center gap-5 md:gap-0  lg:justify-between items-center flex-wrap">
-        {events.map((x, index) => (
-          <Image
-            key={index}
-            src={x.img1}
-            alt="events"
-            className="w-[345px] h-[264px]"
-          />
-        ))}
-      </div>
+    <div className="my-14 md:my-20 lg:my-[120px]">
+        <h3 className="font-space-grotesk font-bold text-base md:text-xl lg:text-3xl xl:text-[40px] text-black text-center uppercase py-14">
+          Other Products
+        </h3>
+        <div className=" flex justify-center items-center flex-wrap gap-5 md:gap-0 lg:justify-between  ">
+          {events.map((x, index) => (
+            <Image
+              key={index}
+              src={x.img1}
+              alt="events"
+              className="w-[339px] h-[264px]"
+            />
+          ))}
+        </div>
+      
     </div>
   );
 };

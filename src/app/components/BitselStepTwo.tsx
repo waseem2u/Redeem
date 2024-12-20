@@ -21,14 +21,14 @@ const BitselStepTwo = () => {
 
   return (
     <div className="section-bit">
-      <div className="flex justify-center items-center pt-[100px]">
+      <div className="hidden flex justify-center items-center mt-[100px]">
         <div className=" w-[139px] h-10 border border-black">
           <p className="font-normal font-space-grotesk text-black text-center text-xl py-[5px]">
             Step 02
           </p>
         </div>
       </div>
-      <div className="w-full flex justify-center items-center flex-col gap-[24px] py-[35px]">
+      <div className="hidden w-full flex justify-center items-center flex-col gap-[24px] py-[35px]">
         <h3 className="font-bold font-space-grotesk text-black text-base md:text-2xl lg:text-[40px] text-center">
           PURCHASE MERCHA AND UNLOCK REWARDS
         </h3>
@@ -38,7 +38,7 @@ const BitselStepTwo = () => {
           before they’re gone!
         </p>
       </div>
-      <p className="font-bold font-space-grotesk text-base md:text-[20px] underline text-center">
+      <p className="font-space-grotesk font-bold text-xs md:text-sm xl:text-xl text-black text-center underline mt-10">
         Pick Your Merch Below
       </p>
       <div className="mt-10">
@@ -70,7 +70,7 @@ const BitselStepTwo = () => {
         </div>
       </div>
       <div className="my-10">
-        <p className="font-bold font-space-grotesk text-base md:text-[20px] underline text-center">
+        <p className="font-space-grotesk font-bold text-xs md:text-sm xl:text-xl text-black text-center underline">
           Your Chosen Gear Awaits: REDEEM NOW
         </p>
       </div>

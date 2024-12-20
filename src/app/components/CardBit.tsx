@@ -3,7 +3,7 @@ import React from "react";
 const CardBit = () => {
   return (
     <div className="w-full">
-      <div className="w-full max-w-[500px] h-[600px]">
+      <div className="w-full max-w-[500px]  md:h-[600px]">
         <img
           src="/bitsel-img/bitsel-container.svg"
           alt="container"

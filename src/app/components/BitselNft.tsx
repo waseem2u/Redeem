@@ -27,18 +27,18 @@ const BitselNft = () => {
   return (
     <div className="section-bit">
       <div className=" border-t border-border-smoke-grey ">
-        <div className="flex justify-center items-center pt-[100px]">
-          <div className=" w-[139px] h-10 border border-black">
+        <div className="flex justify-center items-center ">
+          <div className="hidden w-[139px] h-10 border border-black">
             <p className="font-normal font-space-grotesk text-black text-center text-xl py-[5px]">
               Step 01
             </p>
           </div>
         </div>
-        <div className="w-full flex justify-center items-center flex-col gap-[24px] py-[35px]">
-          <h3 className="font-bold font-space-grotesk text-black text-base md:text-[40px] text-center">
+        <div className="w-full flex justify-center items-center flex-col gap-[24px] pb-[35px]">
+          <h3 className="hidden font-space-grotesk font-semibold text-base text-black  text-center">
             Your VIP Journey Begins Here
           </h3>
-          <p className="w-full max-w-[601px] text-center  text-black font-normal font-space-grotesk ">
+          <p className="hidden w-full max-w-[601px] text-center  text-black font-normal font-space-grotesk ">
             Own a piece of BitBasel with our exclusive festival NFT. This unique
             digital collectible embodies the spirit of BitBasel 2024, featuring
             artwork from leading digital artists.
@@ -81,20 +81,20 @@ const BitselNft = () => {
           <div className="flex justify-center items-center flex-col lg:flex-row mt-14 md:gap-14 lg:gap-10 gap-10">
             <CardBit />
             <div className="w-full  max-w-[500px] h-[600px]">
-              <h3 className="uppercase font-bold font-space-grotesk text-base  md:text-4xl text-black">
+              <h3 className="font-space-grotesk font-bold text-base md:text-xl lg:text-3xl xl:text-4xl text-black text-cent uppercase">
                 tHE FUTURE OF THE ARTS
               </h3>
-              <div className="flex justify-start items-start gap-5 pt-2 md:pt-0">
+              <div className="flex justify-start items-center gap-5 pt-2 md:pt-0">
                 <p className="text-base md:text-xl font-normal text-black font-space-grotesk">
                   Current Price:
                 </p>
-                <p className="text-base md:text-2xl text-black font-space-grotesk font-bold uppercase">
+                <p className="font-space-grotesk font-bold text-base md:text-xl lg:text-3xl xl:text-[22px] text-black text-cent">
                   free
                 </p>
               </div>
               <div className="w-full border border-border-smoke-grey mt-[15px]">
                 <div className="flex justify-center items-center flex-col">
-                  <p className="px-[41px] py-[22px] font-space-grotesk font-normal text-base md:text-xl text-black">
+                  <p className="px-5 py-5 md:px-[41px] md:py-[22px] font-space-grotesk font-normal text-base md:text-xl text-black">
                     Claim your{" "}
                     <span className="font-medium  text-xl md:text-2xl">
                       FREE NFT
@@ -107,13 +107,13 @@ const BitselNft = () => {
                     </span>{" "}
                     and earn exclusive rewards at our upcoming events.
                   </p>
-                  <p className="px-[41px] pb-[22px] font-space-grotesk font-normal text-base md:text-xl text-black">
+                  <p className="px-5 py-5 md:px-[41px] md:pb-[22px] font-space-grotesk font-normal text-base md:text-xl text-black">
                     Don’t just witness the future—be a part of it.Own a piece of
                     the arts revolution and enjoy perks reserved only for true
                     visionaries.
                   </p>
                 </div>
-                <div className="px-[41px] pb-[22px] flex justify-start items-start gap-[17px]">
+                <div className="px-[41px] flex justify-start items-start gap-[17px]">
                   <div className="w-[64px] h-[64px]">
                     <img
                       src="/bit-basel-logo/card-basel-logo.svg"
@@ -131,7 +131,10 @@ const BitselNft = () => {
                 </div>
               </div>
               <div className="mt-[44px] w-full">
-                <CustomButton className="w-full" width="full"> mint nft</CustomButton>
+                <CustomButton className="w-full" width="full">
+                  {" "}
+                  mint nft
+                </CustomButton>
               </div>
             </div>
           </div>

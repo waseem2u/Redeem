@@ -5,16 +5,10 @@ import CustomButton from "./CustomButton";
 const BitBasel = () => {
   return (
     <>
-      <nav className="w-full h-[67px] md:h-[87px] bg-white border-b-2 border-lite-smoke relative z-10">
-        <div className="w-[147px] h-[29px] cursor-pointer block sm:hidden">
-          <img
-            src="/bit-basel-logo/bit-basel-logo.svg"
-            alt="lumina"
-            className="w-full h-full object-contain"
-          />
-        </div>
+      <nav className="w-full h-[67px] md:h-[87px] bg-white border-b-2 border-lite-smoke relative z-10 hidden md:block">
+        
         <div className="hidden xl:flex screen-size items-center justify-between gap-12 sm:px-5 2xl:pl-14  2xl:pr-[116px]">
-          <div className="w-[147px] h-[29px] cursor-pointer">
+          <div className="w-[147px] h-[29px] cursor-pointer ">
             <img
               src="/bit-basel-logo/bit-basel-logo.svg"
               alt="lumina"
